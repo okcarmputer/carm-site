@@ -1,57 +1,12 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" lang="">
+<html lang="en">
 <head>
     <meta charset="UTF-8" />
     <link href="style.css" rel="stylesheet" type="text/css" />
     <title>htmella</title>
 </head>
 <body class="custom-cursor">
-<div id="background-image"></div>
-
-<!-- Move the navigation bar to the left side of the site -->
-<nav id="left-nav">
-    <button onclick="window.location.href='music.html'" id="button1">Music</button>
-    <button onclick="window.location.href='memes.html'" id="button2">Urgent</button>
-    <button onclick="window.location.href='twt.html'" id="button3">Hits</button>
-    <button onclick="window.location.href='about.html'" id="button4">About</button>
-</nav>
-
-<!-- Move the buttons to the right side of the site -->
-<div class="right">
-    <button onclick="window.location.href='song.html'">Today's Song</button>
-    <button onclick="window.location.href='profile.html'">Account</button>
-</div>
-
-<div id="content" style="width: 55%; margin: 0 auto;">
-    <h1 style="text-align: center;">htmella [html - ella]</h1>
-    <div class="banner-container">
-        <!-- Add the moving banner effect to the first line of the header -->
-        <div class="banner"><span class="animated-text">wake up</span></div>
-    </div>
-	
-	<div class="large-words-container">
-        <!-- Add large words in the center of the page -->
-        <div class="large-words">words don't come easy</div>
-	</div>
-	
-    <div style="display: flex; justify-content: center;">
-        <a href="matrix.html">
-            <img src="explore.png" alt="explore" class="button-image">
-        </a>
-    </div>
-
-    <!-- Separate container div for the buttons -->
-    <div class="footer-container">
-        <footer>
-            <link href="footer.css" rel="stylesheet" type="text/css" />
-            <ul>
-                <li><a href="https://www.linkedin.com/in/carmella-hawkins-a920011bb/">L</a></li>
-                <li><a href="https://instagram.com/carmellaih">I</a></li>
-                <li><a href="https://twitter.com/carmellah_">T</a></li>
-            </ul>
-        </footer>
-    </div>
-</div>
-<script src="index.js"></script>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
 </body>
 </html>
