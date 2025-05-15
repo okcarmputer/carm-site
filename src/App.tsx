@@ -1,3 +1,4 @@
+import './footer.css';
 function App() {
   return (
     <>
@@ -27,7 +28,7 @@ function App() {
         </div>
         <div className="footer-container">
           <footer>
-            <link href="./footer.css" rel="stylesheet" type="text/css" />
+            
             <ul>
               <li><a href="https://www.linkedin.com/in/carmella-hawkins-a920011bb/">L</a></li>
               <li><a href="https://instagram.com/carmellaih">I</a></li>
