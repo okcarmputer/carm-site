@@ -1,0 +1,27 @@
+.text-container {
+    text-align: center;
+    background-color: rgba(200, 162, 200, 0.7); /* Lavender background with 70% opacity */
+    border-radius: 20px; /* Rounded border */
+    padding: 20px; /* Add padding for spacing */
+    margin-bottom: 20px; /* Add margin for spacing */
+    position: relative; /* Set position to relative for curved background */
+}
+
+.text-container::after {
+    content: "";
+    position: absolute;
+    bottom: -20px; /* Position the curved background at the bottom */
+    left: 0;
+    right: 0;
+    height: 40px; /* Set height of curved background */
+    background-color: rgba(200, 162, 200, 0.7); /* Same color as text container */
+    border-radius: 50%; /* Create curved background */
+}
+		.original-text {
+			font-size: 20px; 
+		}
+		body {
+			overflow-y:scroll;
+			background-image: url("background10.jpg");
+        		background-size: cover;
+		}
