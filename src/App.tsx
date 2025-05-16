@@ -1,12 +1,27 @@
 import './footer.css';
+import './App.css'; // Adjust path as needed
+
+import {
+  Menubar,
+  MenubarContent,
+  MenubarItem,
+  MenubarMenu,
+  MenubarTrigger,
+} from "./components/ui/menubar"
+
 function App() {
   return (
     <>
       {/* Navigation bar on the left */}
-      <nav id="left-nav">
-        <button onClick={() => window.location.href='music.html'} id="button1">Music</button>
-        <button onClick={() => window.location.href='about.html'} id="button4">About</button>
-      </nav>
+        <Menubar>
+          <MenubarMenu>
+            <MenubarTrigger>Navigate</MenubarTrigger>
+            <MenubarContent>
+              <MenubarItem onClick={() => window.location.href='music.html'}>Music</MenubarItem>
+              <MenubarItem onClick={() => window.location.href='about.html'}>About</MenubarItem>
+            </MenubarContent>
+          </MenubarMenu>
+        </Menubar>
 
       {/* Buttons on the right */}
       <div className="right">
